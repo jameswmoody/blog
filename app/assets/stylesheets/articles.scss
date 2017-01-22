@@ -48,6 +48,10 @@ a:hover {
 hr {
   border-top: 1px solid #919191;
 }
+.comment-hr {
+  width: 20%;
+  float: left;
+}
 
 input[name="article[title]"], input[name="comment[commenter]"] {
   width: 40%;
