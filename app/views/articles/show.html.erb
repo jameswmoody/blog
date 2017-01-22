@@ -1,27 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Blog | New</title>
-</head>
-<body>
-  <div class="container">
-    <div class="row">
-      <h1><%= @article.title %></h1>
-      <div class="col-md-12 content">
-        <br><br><p><%= @article.text %></p>
-        <br><br><p><%= @article.created_at.strftime("%b %d, %Y") %></p><br><br>
-      </div>
-      <div class="col-md-12">
+<div class="container">
+  <div class="row">
+    <h1><%= @article.title %></h1>
+    <div class="col-md-12 content">
+      <br><br><p><%= @article.text %></p>
+      <br><br><p><%= @article.created_at.strftime("%b %d, %Y") %></p><br><br>
+    </div>
+    <div class="col-md-12">
       <br><h2>Comments</h2><br>
         <%= render @article.comments %>
       <h2>Add a comment:</h2><br><br>
         <%= render 'comments/form' %>
         <%= link_to 'Edit', edit_article_path(@article) %> |
         <%= link_to 'Back', articles_path %><br><br><br><br>
-      </div>
     </div>
   </div>
-</body>
-</html>
+</div>
