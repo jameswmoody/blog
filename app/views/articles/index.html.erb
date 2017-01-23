@@ -7,7 +7,7 @@
           <br><br>
           <h3><%= article.title %></h3>
           <br>
-          <p><%= article.text %></p>
+          <p><%= article.text.html_safe %></p>
           <br>
           <p><%= article.created_at.strftime("%b %d, %Y") %></p>
           <br>

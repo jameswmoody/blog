@@ -15,6 +15,10 @@ group :production do
   gem 'thin'
   gem 'pg'
 end
+
+# Add wysiwyg edit to forms
+gem 'bootsy'
+
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets

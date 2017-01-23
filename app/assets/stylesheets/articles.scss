@@ -11,7 +11,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100|Open+Sans:300');
 @import url('https://fonts.googleapis.com/css?family=Lato:100|Open+Sans:300');
 
-body, html {
+.gradient {
   background: #035972; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(left top, #035972, #D0D59B); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(left top, #035972, #D0D59B); /* For Opera 11.1 to 12.0 */
@@ -54,11 +54,27 @@ hr {
 
 input[name="article[title]"], input[name="comment[commenter]"] {
   width: 40%;
-  opacity: 0.5;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
 }
 
 textarea {
   width: 50%;
   height: 40vh;
   opacity: 0.5;
+}
+
+img {
+  width: 50vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 1000px) {
+  img {
+    width: 90vw;
+  }
 }
